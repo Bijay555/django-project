@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>registration form</title>
+	<meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=2">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+	<div class="container col-md-5">
+		<div class="jambotron col-md-9" style="margin: auto; background-color: yellow; margin-top: 50px;margin-bottom:10px ">
+			<h3>Registration Form:</h3>
+			<form method="POST" action="">
+				{% csrf_token %}
+				<label >Username</label>
+				<input type="text" class="form-control col-md-8" placeholder="enter username" required name="uname"></br>
+				<label>Password:</label>
+				<input type="password"  class="form-control col-md-8" placeholder="enter Password" required name="pwd"></br>
+				Gender:
+				<input type="radio" name="gender" value="m" class="form-inpur-check">Male
+				<input type="radio" name="gender" value="f" class="form-inpur-check">Female</br>
+			</br>
+				<select class="form-control col-md-8" name="lang">
+					<option>-----select a language-----</option>
+					<option value="tel">Telegu</option>
+					<option value="eng">English</option>
+					<option value="nep">Nepali</option>
+
+				</select></br>
+				<!-- </form><input type="file" class="form-control-file"></br> -->
+				<textarea class="form-control col-md-8" name="msg"></textarea></br>
+				<button class="btn btn-danger">Register</button>
+			</form>
+		</div>
+	</div>
+
+</body>
+</html>

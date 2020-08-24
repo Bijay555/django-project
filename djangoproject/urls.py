@@ -27,5 +27,6 @@ urlpatterns = [
     path('extcss/', views.excr, name="extncss"),
     path('jspcss/',views.jsp, name="jspcss"),
     path('register/', views.reg, name="reg"),
-    path('botreg/', views.regi,name="botreg")
+    path('botreg/', views.regi,name="botreg"),
+    path('regform/',views.rgform,name="regf"),
 ]
