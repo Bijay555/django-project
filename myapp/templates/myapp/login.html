@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Login Page</title>
+	<meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+</head>
+<body>
+	<div class="container">
+		<div class="jumbotron col-md-5" style="margin: auto;margin-top: 10% ;background-color: yellow">
+		<h2>Login</h2>
+		<form method="POST" action="">
+			{% csrf_token %}
+			<input type="text" name="uname" required placeholder="enter username" class="form-control"></br>
+			<input type="password" name="psd" required placeholder="enter password" class="form-control"></br>
+			<button type="submit" class="btn btn-primary">Login</button>
+		</form>
+		</div>
+	</div>
+
+</body>
+</html>

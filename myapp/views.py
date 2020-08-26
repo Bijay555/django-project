@@ -41,5 +41,12 @@ def rgform(req):
 		# print(usname, pswd, gen, language, message)
 		dt = {'username':usname,'password':pswd,'gend':gen,'languag':language,'messag':message}
 		return render(req,'myapp/disp.html',{'fr':dt})
-
 	return render(req,'myapp/registerform.html')
+
+def lg(req):
+	if req.method =="POST":
+		if req.POST['uname'] =='bijay' and req.POST['psd']=='hello':
+			# return HttpResponse("Welcome user")
+			return render(req, 'myapp/welcome.html',{'name':'bijay'})
+		return HttpResponse("invalid username or password")
+	return render(req, 'myapp/login.html')

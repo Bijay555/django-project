@@ -29,4 +29,5 @@ urlpatterns = [
     path('register/', views.reg, name="reg"),
     path('botreg/', views.regi,name="botreg"),
     path('regform/',views.rgform,name="regf"),
+    path('login/',views.lg,name="log"),
 ]
